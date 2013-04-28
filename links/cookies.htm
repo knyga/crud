@@ -1,0 +1,3010 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://code.google.com/p/cookies/wiki/Documentation -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/cookies/wiki/Documentation">
+ 
+ <script src="./cookies_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./cookies_files/plusone.js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"assetVersionPath":"https://ssl.gstatic.com/codesite/ph/2339290658563340828","loggedInUserEmail":null,"relativeBaseUrl":"","assetHostPath":"https://ssl.gstatic.com/codesite/ph","domainName":null,"token":null,"projectName":"cookies","profileUrl":null,"projectHomeUrl":"/p/cookies"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-169896-7'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./cookies_files/ga.js"></script>
+ 
+ 
+ <title>Documentation - 
+ cookies -
+ 
+ How to use jquery.cookies.js - 
+ JavaScript Cookie Handling Library and jQuery plugin - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./cookies_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./cookies_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/cookies/svnchanges/basic?path=/wiki/Documentation.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/2339290658563340828/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+<style type="text/css">/* Local ID — mndocdiojkckhpnhpeminpalidafeink */
+/* Web Store ID — ihmgiclibbndffejedjimfjmfoabpcke */
+
+.TnITTtw-help-selected-wrap {
+  border: 1px solid #C7C6C2;
+  box-shadow: 0 0 10px rgba(43, 43, 43, 0.325);
+  border-radius: 4px;
+  width: 231px
+}
+
+  .TnITTtw-help-inside-layout {
+    height: 133px;
+    background: #F5F5F5;
+    border-radius: 3px
+  }
+
+    .TnITTtw-left-particle {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      box-shadow: inset 0 1px 0 white;
+      color: #4E4E4E;
+      text-shadow: 0 1px 0 white;
+      width: 194px;
+      display: inline-block;
+      border-right: 1px solid #D9D9D9
+    }
+
+      .TnITTtw-content-layout {
+        text-align: left;
+        margin: 10px 15px
+      }
+
+        .TnITTtw-variant-bunch-wrap {
+
+        }
+
+          .TnITTtw-variant-bunch-wrap .inside-layout {
+
+          }
+
+            .TnITTtw-main-variant-wrap {
+
+            }
+
+              .TnITTtw-main-variant {
+                font-weight: 700;
+                font-size: 15px;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.775);
+                display: inline-block;
+                vertical-align: top;
+                color: #2B2B2B
+              }
+
+            .TnITTtw-variants-by-pos {
+              
+            }
+
+              .TnITTtw-TnITTtw-variant-row {
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.775)
+              }
+
+                .TnITTtw-v-pos {
+                  font-weight: 700;
+                  margin-top: 10px;
+                  font-size: 12px;
+                  color: #545454
+                }
+
+                  .TnITTtw-v-pos:first-child {
+                    margin-top: 8px
+                  }
+
+                .TnITTtw-v-closest-wrap {
+                  font-size: 13px;
+                  color: #4E4E4E
+                }
+
+                  .TnITTtw-v-item {
+                    display: inline-block
+                  }
+
+        .TnITTtw-listen-disabled {
+          opacity: 0.475;
+          cursor: default
+        }
+
+    .TnITTtw-right-particle {
+      background: rgba(255, 255, 255, 0.125);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      display: inline-block;
+      width: 36px;
+      height: 133px;
+      vertical-align: top;
+      box-shadow: inset 1px 0 3px rgba(43, 43, 43, 0.05), inset 0 1px 0 #F5F5F5
+    }
+
+      .TnITTtw-sidebar {
+
+      }
+
+        .TnITTtw-sbutton {
+          position: absolute;
+          -webkit-user-select: none;
+          cursor: pointer
+        }
+
+        .TnITTtw-listen-button {
+          width: 16px;
+          height: 17px;
+          background: url(chrome-extension://ihmgiclibbndffejedjimfjmfoabpcke/resources/images/sprites/sprite.png);
+          background-position: -54px 153px;
+          margin: 10px 0 0 10px
+        }
+
+          .TnITTtw-listen-button:active, .TnITTtw-listen-disabled {
+            background-position: -54px 136px
+          }
+
+/* ========== */
+/* Scrollbars */
+
+#TnITTtw-trVisibleLayout {
+  position: relative !important;
+  overflow: hidden;
+  height: 133px;
+  width: 100%
+}
+
+#TnITTtw-tr-scrollbar {
+  position: absolute;
+  display: block;
+  width: 9px; 
+  height: 135px; 
+  font-size: 1px
+}
+
+#TnITTtw-track { 
+  position: absolute;
+  left: 185px;
+  top: -134px;
+  width: 11px;
+  height: 129px;
+  background: transparent
+}
+
+#TnITTtw-dragBar {
+  position: absolute; 
+  left: 1px;
+  top: 1px;
+  width: 5px; 
+  height: 10px;
+  background: rgba(43, 43, 43, 0.475);
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #FFF
+}
+
+  #TnITTtw-dragBar:hover, #TnITTtw-dragBar:active {
+    background: rgba(43, 43, 43, 0.775)
+  } 
+
+#TnITTtw-scrollbar, #TnITTtw-track, #TnITTtw-dragBar {
+  -webkit-user-select: none
+}</style><style type="text/css">#TnITTtw-tooltip-wrap {
+  position: absolute;
+  z-index: 9999;
+  font-family: Tahoma;
+  font-size: 13px;
+  line-height: normal
+}
+
+  .TnITTtw-inside-layout {
+
+  }
+
+    .TnITTtw-content {
+      
+    }</style><style type="text/css">#TnITTtw-tooltip-wrap {
+  position: absolute;
+  z-index: 9999;
+  font-family: Tahoma;
+  font-size: 13px;
+  line-height: normal
+}
+
+  .TnITTtw-inside-layout {
+
+  }
+
+    .TnITTtw-content {
+      
+    }</style><style type="text/css">.TnITTtw-arrow {
+  display: none;
+  width: 12px;
+  height: 6px;
+  background: url(chrome-extension://ihmgiclibbndffejedjimfjmfoabpcke/resources/images/sprites/sprite.png);
+  position: relative
+}
+
+.TnITTtw-top-arrow {
+  background-position: -108px 148px;
+  bottom: -1px
+}
+
+.TnITTtw-bottom-arrow {
+  background-position: -108px 154px;
+  top: -1px
+}</style><style type="text/css"></style><style type="text/css"></style></head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="https://code.google.com/p/cookies/wiki/Documentation#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcookies%2Fwiki%2FDocumentation&followup=https%3A%2F%2Fcode.google.com%2Fp%2Fcookies%2Fwiki%2FDocumentation" onclick="_CS_click(&#39;/gb/ph/signin&#39;);"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/cookies">
+ <a href="https://code.google.com/p/cookies/">
+ 
+ <img src="./cookies_files/defaultlogo.png" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/cookies/"><span itemprop="name">cookies</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/cookies/"><span itemprop="description">JavaScript Cookie Handling Library and jQuery plugin</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text" x-webkit-speech="">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" x-webkit-speech="">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/cookies/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/cookies/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/cookies/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/cookies/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/cookies/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/cookies/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off" x-webkit-speech=""></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" x-webkit-speech="">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol">
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">Documentation</span>
+ &nbsp;
+ <div> 
+ 
+ <i>How to use jquery.cookies.js</i>
+ 
+ 
+ <br>
+ 
+ <a class="label" style="padding-top: 2px" href="https://code.google.com/p/cookies/w/list?q=label:Featured" title="Listed on project home page">Featured</a>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jan 13 05:51:13 2010">
+ Jan 13, 2010</span>
+ 
+ by 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="How_to_use_jquery.cookies.js"></a>How to use jquery.cookies.js<a href="https://code.google.com/p/cookies/wiki/Documentation#How_to_use_jquery.cookies.js" class="section_anchor"></a></h1><ul><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Without_jQuery">Without jQuery</a> </li><li><a href="https://code.google.com/p/cookies/wiki/Documentation#With_jQuery">With jQuery</a> </li><li><a href="http://code.google.com/p/cookies/wiki/JSON" rel="nofollow">JSON Support</a> </li></ul><ul><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Get_a_cookie">Get a cookie</a> </li><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Get_Filtered_list_of_cookies">Get Filtered list of cookies</a> </li><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Set_a_cookie">Set a cookie</a> </li><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Delete_a_cookie">Delete a cookie</a> </li><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Test_if_browser_is_accepting_cookies">Test if browser is accepting cookies</a> </li><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Set_default_options_to_use_when_none_are_specified">Set default options to use when none are specified</a> </li></ul><ul><li><a href="https://code.google.com/p/cookies/wiki/Documentation#Options_object">Options object</a> </li></ul><h2><a name="Without_jQuery"></a>Without jQuery<a href="https://code.google.com/p/cookies/wiki/Documentation#Without_jQuery" class="section_anchor"></a></h2><p>If jQuery is not available in your page, the core cookies library is available to you under the <i>jaaulde.utils</i> namespace: </p><h3><a name="Get_a_cookie"></a>Get a cookie<a href="https://code.google.com/p/cookies/wiki/Documentation#Get_a_cookie" class="section_anchor"></a></h3><pre class="prettyprint"><span class="com">/**<br>&nbsp;* get - get one, several, or all cookies<br>&nbsp;*<br>&nbsp;* @access public<br>&nbsp;* @paramater Mixed cookieName - String:name of single cookie; Array:list of multiple cookie names; Void (no param):if you want all cookies<br>&nbsp;* @return Mixed - Value of cookie as set; Null:if only one cookie is requested and is not found; Object:hash of multiple or all cookies (if multiple or all requested);<br>&nbsp;*/</span><span class="pln"><br></span><span class="kwd">get</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">cookieName</span><span class="pun">)</span></pre><h4><a name="Example:"></a>Example:<a href="https://code.google.com/p/cookies/wiki/Documentation#Example:" class="section_anchor"></a></h4><ul><li><tt>jaaulde.utils.cookies.get('myCookie');</tt> </li><ul><li>returns value of myCookie if it is present, null if not </li></ul><li><tt>jaaulde.utils.cookies.get(['myCookie', 'myOtherCookie']);</tt> </li><ul><li>returns array containing value of each requested cookie if it is present, null if not </li></ul><li><tt>jaaulde.utils.cookies.get();</tt> </li><ul><li>returns array of all cookies from your site </li></ul></ul><h3><a name="Get_Filtered_list_of_cookies"></a>Get Filtered list of cookies<a href="https://code.google.com/p/cookies/wiki/Documentation#Get_Filtered_list_of_cookies" class="section_anchor"></a></h3><pre class="prettyprint"><span class="com">/**<br>&nbsp;* filter - get array of cookies whose names match the provided RegExp<br>&nbsp;*<br>&nbsp;* @access public<br>&nbsp;* @paramater Object RegExp - The regular expression to match against cookie names<br>&nbsp;* @return Mixed - Object:hash of cookies whose names match the RegExp<br>&nbsp;*/</span><span class="pln"><br>filter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln"> cookieNameRegExp </span><span class="pun">)</span></pre><h4><a name="Example:"></a>Example:<a href="https://code.google.com/p/cookies/wiki/Documentation#Example:" class="section_anchor"></a></h4><ul><li><tt>jaaulde.utils.cookies.filter( /^site/ );</tt> </li><ul><li>returns list of cookies whose names start with "site" </li></ul></ul><h3><a name="Set_a_cookie"></a>Set a cookie<a href="https://code.google.com/p/cookies/wiki/Documentation#Set_a_cookie" class="section_anchor"></a></h3><pre class="prettyprint"><span class="com">/**<br>&nbsp;* set - set or delete a cookie with desired options<br>&nbsp;*<br>&nbsp;* @access public<br>&nbsp;* @paramater String cookieName - name of cookie to set<br>&nbsp;* @paramater Mixed value - Any JS value. If not a string, will be JSON encoded (http://code.google.com/p/cookies/wiki/JSON); NULL to delete<br>&nbsp;* @paramater Object options - optional list of cookie options to specify<br>&nbsp;* @return void<br>&nbsp;*/</span><span class="pln"><br></span><span class="kwd">set</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">cookieName</span><span class="pun">,</span><span class="pln"> value</span><span class="pun">,</span><span class="pln"> options</span><span class="pun">)</span></pre><h4><a name="Example:"></a>Example:<a href="https://code.google.com/p/cookies/wiki/Documentation#Example:" class="section_anchor"></a></h4><ul><li><tt>jaaulde.utils.cookies.set('myCookie', 'myValue');</tt> </li><ul><li>sets cookie by the name of 'myCookie' to value of 'myValue' with default options </li></ul><li><tt>jaaulde.utils.cookies.set('myCookie', 'myValue', {path: '/somedir'});</tt> </li><ul><li>sets cookie by the name of 'myCookie' to value of 'myValue' with path of '/somedir' </li></ul><li><strong>See information on options object below</strong> </li></ul><h3><a name="Delete_a_cookie"></a>Delete a cookie<a href="https://code.google.com/p/cookies/wiki/Documentation#Delete_a_cookie" class="section_anchor"></a></h3><pre class="prettyprint"><span class="com">/**<br>&nbsp;* del - delete a cookie (domain and path options must match those with which the cookie was set; this is really an alias for set() with parameters simplified for this use)<br>&nbsp;*<br>&nbsp;* @access public<br>&nbsp;* @paramater MIxed cookieName - String name of cookie to delete, or Bool true to delete all<br>&nbsp;* @paramater Object options - optional list of cookie options to specify ( path, domain )<br>&nbsp;* @return void<br>&nbsp;*/</span><span class="pln"><br></span><span class="kwd">del</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">cookieName</span><span class="pun">,</span><span class="pln"> options</span><span class="pun">)</span></pre><h4><a name="Example:"></a>Example:<a href="https://code.google.com/p/cookies/wiki/Documentation#Example:" class="section_anchor"></a></h4><ul><li><tt>jaaulde.utils.cookies.del('myCookie');</tt> </li><ul><li>deletes a cookie, 'myCookie', with default options </li></ul><li><tt>jaaulde.utils.cookies.del('myCookie', {path: '/somedir'});</tt> </li><ul><li>deletes a cookie by the name of 'myCookie' which had been set with a path of '/somedir' </li></ul><li><tt>jaaulde.utils.cookies.del(true);</tt> </li><ul><li>deletes all cookies </li></ul><li>A cookie can only be deleted using the same options with which it was set </li><li><strong>See information on options object below</strong> </li></ul><h3><a name="Test_if_browser_is_accepting_cookies"></a>Test if browser is accepting cookies<a href="https://code.google.com/p/cookies/wiki/Documentation#Test_if_browser_is_accepting_cookies" class="section_anchor"></a></h3><pre class="prettyprint"><span class="com">/**<br>&nbsp;* test - test whether the browser is accepting cookies<br>&nbsp;*<br>&nbsp;* @access public<br>&nbsp;* @return Boolean<br>&nbsp;*/</span><span class="pln"><br>test </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span></pre><h4><a name="Example:"></a>Example:<a href="https://code.google.com/p/cookies/wiki/Documentation#Example:" class="section_anchor"></a></h4><ul><li><tt>jaaulde.utils.cookies.test();</tt> </li><ul><li>attempts to set a cookie and returns true or false upon success or failure </li></ul></ul><h3><a name="Set_default_options_to_use_when_none_are_specified"></a>Set default options to use when none are specified<a href="https://code.google.com/p/cookies/wiki/Documentation#Set_default_options_to_use_when_none_are_specified" class="section_anchor"></a></h3><pre class="prettyprint"><span class="com">/**<br>&nbsp;* setOptions - set default options for calls to cookie methods<br>&nbsp;*<br>&nbsp;* @access public<br>&nbsp;* @param Object options - list of cookie options to specify<br>&nbsp;* @return void<br>&nbsp;*/</span><span class="pln"><br>setOptions </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">options</span><span class="pun">)</span></pre><h4><a name="Example:"></a>Example:<a href="https://code.google.com/p/cookies/wiki/Documentation#Example:" class="section_anchor"></a></h4><ul><li><tt>jaaulde.utils.cookies.setOptions({path: '/somedir'});</tt> </li><ul><li>all cookies will be set or deleted with the path , '/somedir', unless it is explicitly provided in a passed options object </li></ul><li><strong>See information on options object below</strong> </li></ul><h2><a name="With_jQuery"></a>With jQuery<a href="https://code.google.com/p/cookies/wiki/Documentation#With_jQuery" class="section_anchor"></a></h2><p>If jQuery is available, then all of the <a href="http://code.google.com/p/cookies/wiki/Documentation#Without_jQuery" rel="nofollow">above methods</a> are available to you under the <i>jQuery.cookies</i> (or <i>$.cookies</i> ) namespace: </p><ul><li><tt>$.cookies.get()</tt> </li><li><tt>$.cookies.filter()</tt> </li><li><tt>$.cookies.set()</tt> </li><li><tt>$.cookies.del()</tt> </li><li><tt>$.cookies.test()</tt> </li><li><tt>$.cookies.setOptions()</tt> </li></ul><p></p><p>In addition, there are some jQuery function additions for helping automate some cookie tasks: </p><ul><li><strong>Set the value of a form field or the HTML of an element to a cookie named after the field's/element's name or id attribute</strong> </li><ul><li><tt>$('#username').cookify();</tt> </li><ul><li>The value of the field, or HTML of the element, with id "username" is set to a cookie named after the name or id attribute of that field/element. If a radio or checkbox and it's checked, the value will be set. </li></ul></ul></ul><ul><li><strong>Fill a field's value, or an element's innerHTML with the value of a cookie</strong> </li><ul><li><tt>$('#username').cookieFill();</tt> </li><ul><li>Set the value of the input, or HTML of the element, with id, 'username', to the value of a cookie by the same name.  If a radio or checkbox and it is checked, the cookie will be set.  If not checked, the cookie will be deleted. </li></ul></ul></ul><ul><li><strong>Bind an input to the cookies library</strong> </li><ul><li><tt>$('#username').cookieBind();</tt> </li><ul><li>Fills the field or element with id, 'username', with the cookie named the same and sets the field's/element's change event to fire cookify() to update the cookie when the input value changes </li></ul></ul></ul><h2><a name="Options_object"></a>Options object<a href="https://code.google.com/p/cookies/wiki/Documentation#Options_object" class="section_anchor"></a></h2><p>Using the options object, cookies can be set with several options such as the domain and or path for which the cookie should be available, expiration date for the cookie, and whether the cookie should be sent over HTTPS only.   </p><p>The options object has four properties: </p><ul><li><strong>domain</strong> </li><ul><li>STRING </li><li>For which domain should the cookie be available </li></ul><li><strong>path</strong> </li><ul><li>STRING </li><li>For which path should the cookie be available </li></ul><li><strong>hoursToLive (DEPRECATED for expiresAt)</strong> </li><ul><li>NUMBER </li><li>For how many hours should the cookie be valid? (Passing 0 means to delete the cookie at the end of the browser session--this is default.  Negative values will delete the cookie, but you should use the del() method instead.) </li></ul><li><strong>expiresAt</strong> </li><ul><li>Date OBJECT </li><li>Date object representing expiration date/time of cookie </li></ul><li><strong>secure</strong> </li><ul><li>BOOL </li><li>Should cookie be sent to server via HTTPS <i>only</i>? </li></ul></ul><p></p><p>The structure of the object is as follows: </p><pre class="prettyprint"><span class="pln">&nbsp; </span><span class="kwd">var</span><span class="pln"> newOptions </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; domain</span><span class="pun">:</span><span class="pln"> </span><span class="str">'*.mydomain.com'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; path</span><span class="pun">:</span><span class="pln"> </span><span class="str">'/somedir'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; expiresAt</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="pln"> </span><span class="lit">2011</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">),</span><span class="pln"><br>&nbsp; &nbsp; secure</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span></pre><p>You need only set those options which you desire to override. </p><p>The default options when not overridden are: </p><ul><li><strong>domain</strong> </li><ul><li>no value - will cause current domain of current page to be used </li></ul><li><strong>path</strong> </li><ul><li>/ </li></ul><li><strong>expiration</strong> </li><ul><li>no value--causes cookie to be deleted at end of browser session </li></ul><li><strong>secure</strong> (send over HTTPS only) </li><ul><li>false </li></ul></ul><p></p><p>An options object can be passed with <tt>set()</tt>, <tt>del()</tt>, <tt>cookify()</tt>, and <tt>cookieBind()</tt> to override the defaults on a case by case basis.  You can also pass an options object to <tt>setOptions()</tt> to override the defaults for all calls. </p><p><strong>IMPORTANT NOTE:</strong> Cookies must be deleted using the same domain and path options with which they were set.  Else the cookie will not delete.  This is just how cookies work. </p>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/cmtonkinson/">cmtonkinson</a>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 10 20:22:49 2008">Dec 10, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>First off, thanks for this great jQuery plugin. </p><p>Second, thank you for avoiding puns when you mention that "This is just how cookies work."  ;) </p><p>Cheers! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/doug.bonneville@gmail.com/">doug.bonneville@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed Jan 21 07:41:06 2009">Jan 21, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>How do you set the expiration date? How should that be formatted? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/108695115035120809041/">xizhong...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 27 23:39:01 2009">Jan 27, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Thanks for this plugin. </p><p>But I got a problem. When I use chinese word in cookies. I got the cookie, but can't show the chinese word currectly. I use decodeURI to replace with the unescape to solve this problem. </p><p>xxfflower@qq.com </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed Jan 28 11:53:52 2009">Jan 28, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@all Sorry to have ignored the older comments and issues. I was not monitoring this page very closely as I assumed Google Code would email me when comments, issues, etc were left.  I'll be watching more closely now. </p><p>@cmtonkinson - thank for the comments! </p><p>@doug.bonneville - I support expiration via the hoursToLive option.  You just tell the library how many hours the cookie should be valid and it will produce the expiration time stamp </p><p>@xizhonghua - do you mind opening an issue for me on that?  In that issue can you show me the code you used to fix the problem you're having?  Thanks a lot! </p><p>I hope to have a patched version out soon with the small fixes for reported issues thus far. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/110659828341892879758/">digitalm...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 31 10:55:26 2009">Jan 31, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, first off, thank you for writing this plugin. It makes cookies much easier and faster to work with if you're using jQuery. I don't know why jQuery doesn't have this built in...MooTools<a href="https://code.google.com/p/cookies/w/edit/MooTools">?</a> does. But, anyway, are there any issues with this plugin and jQuery 1.3.x ? I can't seem to get it to work. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Feb  2 13:02:31 2009">Feb 2, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@digitalmatthew I have done some limited testing with 1.3.1 and had no problems as of yet.  I am working on releasing 2.0.1 of this library with a few fixes and hope to do full testing with jQ 1.3.1.  I'd love it if you would open issues ( <a href="http://code.google.com/p/cookies/issues/list" rel="nofollow">http://code.google.com/p/cookies/issues/list</a> ) on the specific problems you're facing so that I know where to target some testing. </p><p>Thanks, Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112404277626083423600/">marie.c....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Feb  2 17:21:57 2009">Feb 2, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Just wanted to drop a note and let you know that this documentation saved me hours of work!  thank you for the clear descriptions and ease of use.  Marie </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101086638467373305640/">docpom...@googlemail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Feb 27 04:02:06 2009">Feb 27, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Great plugin! Thanks for sharing it with all of us! I made a slight modification to enable cookieBind() with &lt;select&gt; elements also: </p><p>In cookieFill() replace the nodeType check with this:  </p><pre class="prettyprint"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">nodeType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'input'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> nodeType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'textarea'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> nodeType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'select'</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="pln">value</span><span class="pun">);</span><span class="pln"><br></span><span class="pun">}</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Feb 28 06:15:45 2009">Feb 28, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@docpommes that sounds great.  I had written then method hastily and meant to get back to it to better support other things.  I'll put in an Enhancement request on the Issues list and try to work this into 2.0.2. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116095560023518745928/">tony.ro...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May  5 16:41:37 2009">May 5, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@everyone How can i implements this code in a website? Is there are a sample of implementation code? Which vars i need to replace? </p><blockquote>var newOptions = {    domain: '<strong>.mydomain.com',    path: '/somedir',    hoursToLive: 24,    secure: true  } 
+</strong></blockquote><p></p><p>Thanks. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May  5 17:20:19 2009">May 5, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@tony.rodz5 you do not need to replace any of the options unless you have a specific need in mind.  The most common one replaced is hoursToLive as different cookies often need different expire times.  As for how to implement, it depends on exactly what you're wanting to do. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116095560023518745928/">tony.ro...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May  5 17:43:52 2009">May 5, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@auldridgej So, i put the js within &lt;head&gt; and change the hoursToLive and that is it? Got it! Thank you. ;-) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May  5 17:47:23 2009">May 5, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@tony.rodz5 well, yes, that's a start.  Each option can be changed per cookie set(), or can be set globally via setOptions(). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/105355552773114103580/">imy...@zappos.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat May 16 08:41:33 2009">May 16, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I can't seem to set a cookie when using custom options. Works fine if I don't try to override the options. I'm using jQuery 1.3.2. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat May 16 12:14:00 2009">May 16, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Please open an issue and provide detailed information on which options you're attempting to override. </p><p>Thanks, Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106077210990333769203/">hudzai...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed May 27 22:52:41 2009">May 27, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@auldridgej Is there an option where jquery bind to cookie changes. tq </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/102507475538739422816/">hammo...@yahoo.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri May 29 07:40:06 2009">May 29, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Couldn't get cookie.get to work and realized there is a limitation in IE with document.cookie if over 4096 bytes of cookies stored.  Deleted some cookies and everything is great. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri May 29 07:49:16 2009">May 29, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@hudzaifah - if you mean a way to have a cookie be stored under a different name than the ID/Name of the input to which you're binding it, I have not adding anything like that. </p><p>@hammo...@yahoo.com Thanks for the note! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106876005346553166690/">Peter.w...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 11 06:16:39 2009">Jun 11, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Is there anyway to have the cookie expire on browser close and time based? which ever comes first? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 11 06:23:39 2009">Jun 11, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@Peter.wolk no cookies do not have this functionality (AFAIK). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106876005346553166690/">Peter.w...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 11 11:48:07 2009">Jun 11, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Thanks for the quick response! Another question, I can't seem to get a cookie that i know is on my machine. the page that's calling this code in on another domain but i don't believe that should matter since it should just be searching for the cookie on my machine. </p><pre class="prettyprint"><span class="kwd">var</span><span class="pln"> cookie_value </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'test_info'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">domain</span><span class="pun">:</span><span class="pln"> </span><span class="str">'www.test.com'</span><span class="pun">,</span><span class="pln"> path </span><span class="pun">:</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">});</span></pre><p>I'm i doing this incorrectly? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 11 11:55:10 2009">Jun 11, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@Peter.wolk when retrieving cookies, only the name of the desired cookie can be passed in.  Cookie technology limits read to those cookies which have not expired, and were originally set for the current path/domain. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106876005346553166690/">Peter.w...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 11 12:50:24 2009">Jun 11, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@my earlier comment: if anyone is interested in doing something when the session ends or time end, whichever comes first: </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="str">'#acpt'</span><span class="pun">).</span><span class="pln">click</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'ses'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'full_acpt'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">path </span><span class="pun">:</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'sxmns'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'full_acpt'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">path </span><span class="pun">:</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">,</span><span class="pln"> hoursToLive</span><span class="pun">:</span><span class="pln"> </span><span class="pun">.</span><span class="lit">1</span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">});</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> cookie_value_ses </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'ses'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">path </span><span class="pun">:</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> cookie_value_sxmns </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'sxmns'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">path </span><span class="pun">:</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">cookie_value_ses </span><span class="pun">!=</span><span class="pln"> </span><span class="str">"full_acpt"</span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//do something</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">cookie_value_sxmns </span><span class="pun">!=</span><span class="pln"> </span><span class="str">"full_acpt"</span><span class="pun">){</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//do something</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 11 12:53:11 2009">Jun 11, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@Peter.wolk good work and thanks for sharing! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/109892161697212106877/">michele....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 18 04:26:17 2009">Jun 18, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Hello, this is the code I tried for supporting checkboxes and radio buttons. </p><pre class="prettyprint"><span class="typ">Index</span><span class="pun">:</span><span class="pln"> jquery</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="lit">2.1</span><span class="pun">.</span><span class="lit">0.js</span><span class="pln"><br></span><span class="pun">===================================================================</span><span class="pln"><br></span><span class="pun">---</span><span class="pln"> jquery</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="lit">2.1</span><span class="pun">.</span><span class="lit">0.js</span><span class="pln"> &nbsp; &nbsp; </span><span class="pun">(</span><span class="pln">revision </span><span class="lit">56</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">+++</span><span class="pln"> jquery</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="lit">2.1</span><span class="pun">.</span><span class="lit">0.js</span><span class="pln"> &nbsp; &nbsp; </span><span class="pun">(</span><span class="pln">working copy</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">@@</span><span class="pln"> </span><span class="pun">-</span><span class="lit">321</span><span class="pun">,</span><span class="lit">16</span><span class="pln"> </span><span class="pun">+</span><span class="lit">321</span><span class="pun">,</span><span class="lit">18</span><span class="pln"> </span><span class="pun">@@</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inputType </span><span class="pun">=</span><span class="pln"> inputType</span><span class="pun">.</span><span class="pln">toLowerCase</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">-</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> inputType </span><span class="pun">!==</span><span class="pln"> </span><span class="str">'radio'</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> inputType </span><span class="pun">!==</span><span class="pln"> </span><span class="str">'checkbox'</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resolvedValue </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> inputType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'radio'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> inputType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'checkbox'</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; value </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"checked"</span><span class="pun">);</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; value </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span><span class="pln"><br></span><span class="pun">-</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resolvedValue </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> resolvedValue </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br></span><span class="pun">-</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">typeof</span><span class="pln"> value </span><span class="pun">!==</span><span class="pln"> </span><span class="str">'string'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> value </span><span class="pun">===</span><span class="pln"> </span><span class="str">''</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> value </span><span class="pun">===</span><span class="pln"> </span><span class="str">''</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> value </span><span class="pun">===</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; value </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">@@</span><span class="pln"> </span><span class="pun">-</span><span class="lit">372</span><span class="pun">,</span><span class="lit">7</span><span class="pln"> </span><span class="pun">+</span><span class="lit">374</span><span class="pun">,</span><span class="lit">13</span><span class="pln"> </span><span class="pun">@@</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nodeName </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">nodeName</span><span class="pun">.</span><span class="pln">toLowerCase</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> nodeName </span><span class="pun">===</span><span class="pln"> </span><span class="str">'input'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> nodeName </span><span class="pun">===</span><span class="pln"> </span><span class="str">'textarea'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> nodeName </span><span class="pun">===</span><span class="pln"> </span><span class="str">'select'</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br></span><span class="pun">-</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="pln"> value </span><span class="pun">);</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inputType </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="pln"> </span><span class="str">'type'</span><span class="pln"> </span><span class="pun">);</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> inputType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'checkbox'</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> inputType </span><span class="pun">===</span><span class="pln"> </span><span class="str">'radio'</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">).</span><span class="pln">attr</span><span class="pun">({</span><span class="kwd">checked</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">});</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="pln"> value </span><span class="pun">);</span><span class="pln"><br></span><span class="pun">+</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">else</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed Jul 29 10:13:38 2009">Jul 29, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@michele.costabile <a title="Please add support for check boxes" class="closed_ref" href="https://code.google.com/p/cookies/issues/detail?id=12">&nbsp;issue #12&nbsp;</a> opened as an enhancement request </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/111632281921800322799/">nando.l...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Oct  6 00:09:49 2009">Oct 6, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Wow! Thanks! Works like a charm, is so simple to use and is very well documented! Thanks for sharing! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">gurura...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 23 02:12:55 2009">Dec 23, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>hi, i wanted a javascript to automatically read the cookies, get the domain name from them and eliminate the duplicates, which i hav to store in the database, i am doing this project on Microsoft visual studio 2008. Could you please help me with it ? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 23 06:27:14 2009">Dec 23, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Hello gururajjs, </p><p>I think you may misunderstand how cookies work.  From the point of view of client code, cookies can be set to a particular path and/or domain with an expiration and a secure flag.  However, when reading, the script is only given access to a name/value list of unexpired cookies which were set to the current domain/path.  Also, cookies set by the same name to the same domain/path do not duplicate--they are overwritten.  The last call to write the cookie wins. </p><p>I hope this helps, but feel free to ask questions. Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103234649751434714962/">liyang....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sun Jan 10 23:12:36 2010">Jan 10, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, </p><p>Thanks a lot for this fantastic plugin. ^^ </p><p>Just an enhancement suggestion. Can we expose a function to call for plugging into the jQuery namespace? This is useful in the situation that the cookie library is needed before jQuery loads, and we do not want to reload the library to just to get the plugging done. </p><p>Perhaps </p><p>( function() { </p><blockquote>jaaulde.utils.cookies.jQueryBind = function( $ ) 
+{ 
+<blockquote>$.cookies = jaaulde.utils.cookies; 
+</blockquote></blockquote>. . . <blockquote>} 
+if( window.jQuery ) 
+</blockquote><blockquote>{ 
+<blockquote>jaaulde.utils.cookies.jQueryBind( window.jQuery ); 
+</blockquote>} 
+</blockquote>} )(); <p></p><p>This will allow us to call jaaulde.utils.cookies.jQueryBind( window.jQuery ) at a later stage. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/115802563718845687371/">chippya...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 12 07:48:09 2010">Jan 12, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Lovely little bit of code.  If I can make a suggestion, perhaps you can extend the get() method to take a second parameter which is a default value to return if the get fetches nothing as the cookie isn't set.  very useful for when a page first gets landed on. </p><p>Thanks for sharing </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 12 09:08:30 2010">Jan 12, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@liyang.tan: Thanks very much for your comments and suggestion.  I can see your reason for asking for this, but am debating whether I should go for it.  Cookie access could definitely be required very early in page loading so I understand why you might want to include it early and bind to jQ later.  However, I am always trying to avoid bloat.  Give me some time to consider it. </p><p>@ashley -AT- bbcb -dot- co -dot- uk: Thank you for your comments and your suggestion too.  I can see some value in what it is you desire, but I think that can be done pretty easily with your own code so I am not sure whether I should add to the size of the library to accommodate. </p><p>Thanks again to you both, Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/113503950018046741514/">joseph...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Feb 23 15:18:59 2010">Feb 23, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Did I read correctly that jquery 1.3.2 already has cookie functionality built in? I have a popup that when closed ..the cookie that was created with the launch of the popup needs to expire after 15 minutes of being opened. The popup wouldn't display again until those 15 minutes have expired. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Feb 23 18:39:44 2010">Feb 23, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@josephrav - No version of the jQuery API has cookie support built in.  I believe the UI team was looking at building it in, but they have not done it yet either.  To accomplish what you want, I would check for the presence of your cookie which holds the flag telling you the popup has displayed.  If the cookie is not present, display the popup and set the cookie with an expiration date 15 minutes in the future. It's as simple as that. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/113503950018046741514/">joseph...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed Feb 24 12:32:36 2010">Feb 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Thanks @auldridgej. So I should use the jquery.cookie.js library here as an addon to my existing 1.3.2 framework? I noticed there was an issue with it. Is there a jquery.cookie.js version that works with 1.3.2.min? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Wed Feb 24 12:38:29 2010">Feb 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@josephrav - yes, you would use my library (or another) to provide the functionality.  There are some fairly minor issues as well as some enhancement requests opened on this plugin. None of those, however, have to do with basic cookie functionality--they're related to the tie-ins to DOM scripting I added.  You wouldn't run into them based on what you were looking to do. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/113503950018046741514/">joseph...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 25 07:44:54 2010">Feb 25, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>One more question...I have an alert that pops up when the page loads if no cookie is set. SInce nothing is clicked...can I change .click function to .load function...or is that even possible. The code that produces the alert on load is: </p><p>$("#alert").overlay({top:'25%',left:350, expose: {color: '#ffffff',loadSpeed: 0,opacity: 0.5},closeOnClick: false,api: true }).load(); </p><p>I don't want that to happen if the cookie is set. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 25 07:59:20 2010">Feb 25, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@josephrav I would do something like this: </p><pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> </span><span class="typ">AlertShownCookieName</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'AlertShown'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">AlertShownCookieExpires</span><span class="pun">;</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="pln"> </span><span class="typ">AlertShownCookieName</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">===</span><span class="pln"> </span><span class="kwd">null</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="pln"> </span><span class="str">'#alert'</span><span class="pln"> </span><span class="pun">).</span><span class="pln">overlay</span><span class="pun">(</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> top</span><span class="pun">:</span><span class="pln"> </span><span class="str">'25%'</span><span class="pun">,</span><span class="pln"> left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">350</span><span class="pun">,</span><span class="pln"> expose</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#ffffff'</span><span class="pun">,</span><span class="pln"> loadSpeed</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> opacity</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.5</span><span class="pln"> </span><span class="pun">},</span><span class="pln"> closeOnClick</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> api</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">AlertShownCookieExpires</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">AlertShownCookieExpires</span><span class="pun">.</span><span class="pln">setTime</span><span class="pun">(</span><span class="pln"> </span><span class="typ">AlertShownCookieExpires</span><span class="pun">.</span><span class="pln">getTime</span><span class="pun">()</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="lit">1000</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">60</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">15</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="pln"> </span><span class="typ">AlertShownCookieName</span><span class="pun">,</span><span class="pln"> </span><span class="str">'1'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> expiresAt</span><span class="pun">:</span><span class="pln"> </span><span class="typ">AlertShownCookieExpires</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"> </span><span class="pun">);</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/113503950018046741514/">joseph...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 25 08:13:02 2010">Feb 25, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Thanks auldridgej,dowe need to leave the .load off at the end of the alert script? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 25 08:23:45 2010">Feb 25, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@josephrav Sorry for that--you can have load() on there.  I didn't have your code in context and dropped it. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/113503950018046741514/">joseph...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 25 08:31:06 2010">Feb 25, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Perfect...this works great...thanks so much for your help. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 25 08:35:31 2010">Feb 25, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@josephrav No problem, I'm glad you find it useful! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/102437779498415032525/">ryan.p...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar  1 13:07:25 2010">Mar 1, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I am having some issues with this plugin.  Maybe a trite example but i want to save form input values in cookies. </p><p>I have multiple HTML input fields for different customers which look like this: </p><pre class="prettyprint"><span class="tag">&lt;select</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"titleDepend1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inlineSpace jTitle"</span><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Please select"</span><span class="tag">&gt;</span><span class="pln">Please select...</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Mr"</span><span class="tag">&gt;</span><span class="pln">Mr</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Mrs"</span><span class="tag">&gt;</span><span class="pln">Mrs</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Ms"</span><span class="tag">&gt;</span><span class="pln">Ms</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Miss"</span><span class="tag">&gt;</span><span class="pln">Miss</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Dr"</span><span class="tag">&gt;</span><span class="pln">Dr</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Other"</span><span class="tag">&gt;</span><span class="pln">Other</span><span class="tag">&lt;/option&gt;</span><span class="pln"><br></span><span class="tag">&lt;/select&gt;</span><span class="pln"><br></span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"otherDepend1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inlineSpace jOther"</span><span class="tag">&gt;</span><span class="pln">Other</span><span class="tag">&lt;/label&gt;</span><span class="pln"><br></span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text jOther"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"otherDepend1"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"otherDepend1"</span><span class="pln"> </span><span class="atn">maxlength</span><span class="pun">=</span><span class="atv">"6"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre><p>I then use jQuery to set the cookies like so: </p><pre class="prettyprint"><span class="com">// hide 'Other' inputs to start</span><span class="pln"><br>$</span><span class="pun">(</span><span class="str">'.jOther'</span><span class="pun">).</span><span class="pln">hide</span><span class="pun">();</span><span class="pln"><br><br></span><span class="com">// event listener on all select drop downs with class of jTitle </span><span class="pln"><br>$</span><span class="pun">(</span><span class="str">".jTitle"</span><span class="pun">).</span><span class="pln">change</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">//set the select value</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> val </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">val </span><span class="pun">!=</span><span class="pln"> </span><span class="str">"Other"</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//$(this).nextAll('.jOther').hide();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">parent</span><span class="pun">().</span><span class="pln">find</span><span class="pun">(</span><span class="str">".jOther"</span><span class="pun">).</span><span class="pln">hide</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//$(this).nextAll('.jOther').show();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">parent</span><span class="pun">().</span><span class="pln">find</span><span class="pun">(</span><span class="str">".jOther"</span><span class="pun">).</span><span class="pln">show</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">// Sets a cookie with named after the title field's ID attribute </span><span class="pln"><br>&nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">cookify</span><span class="pun">();</span><span class="pln"><br><br></span><span class="pun">});</span><span class="pln"><br><br></span><span class="typ">Then</span><span class="pln"> i loop over all the </span><span class="typ">Title</span><span class="pln"> drop downs on the page</span><span class="pun">:</span><span class="pln"><br><br></span><span class="pun">{{{</span><span class="pln"><br>$</span><span class="pun">(</span><span class="str">".jTitle"</span><span class="pun">).</span><span class="pln">each</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">// get the id of each Title select drop down</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> $titleId </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">'id'</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">// get the value of the cookie for each cookie created above in $(this).cookify()</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> $cookieValue </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="pln">$titleId</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">// if value is 'Other' make sure it is shown on page refresh</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$cookieValue </span><span class="pun">==</span><span class="pln"> </span><span class="str">'Other'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// Show the other input</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">parent</span><span class="pun">().</span><span class="pln">find</span><span class="pun">(</span><span class="str">".jOther"</span><span class="pun">).</span><span class="pln">show</span><span class="pun">();</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// set select value to 'Other'</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="str">'Other'</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// set to whatever is in the cookie</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="pln">$cookieValue</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br><br></span><span class="pun">});</span><span class="pln"><br><br></span><span class="typ">However</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="kwd">no</span><span class="pln"> cookie has been </span><span class="kwd">set</span><span class="pln"> i</span><span class="pun">.</span><span class="pln">e</span><span class="pun">.</span><span class="pln"> the user has just come to the page </span><span class="kwd">then</span><span class="pln"> the value of the drop down </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">.</span><span class="pln"> &nbsp;I need it to be </span><span class="str">'Please select'</span><span class="pun">.</span><span class="pln"><br></span><span class="pun">}}}</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar  1 13:38:24 2010">Mar 1, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@ryan.pays - I have a Cub Scout meeting to lead this evening, but I will take a look at your code and see what I can do.  Please give me a day or so. Thanks, Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/102437779498415032525/">ryan.p...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar  1 13:47:05 2010">Mar 1, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>The following sorts it: </p><pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">".jTitle"</span><span class="pun">).</span><span class="pln">each</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln"><br>&nbsp; </span><span class="kwd">var</span><span class="pln"> $titleId </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">'id'</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="kwd">var</span><span class="pln"> $cookieValue </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="pln">$titleId</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$cookieValue </span><span class="pun">==</span><span class="pln"> </span><span class="str">'Other'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">parent</span><span class="pun">().</span><span class="pln">find</span><span class="pun">(</span><span class="str">".jOther"</span><span class="pun">).</span><span class="pln">show</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="str">'Other'</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">$cookieValue</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">val</span><span class="pun">(</span><span class="pln">$cookieValue</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br></span><span class="pun">});</span><span class="pln"><br><br></span><span class="typ">Courtesy</span><span class="pln"> of </span><span class="typ">Stack</span><span class="pln"> </span><span class="typ">Overflow</span><span class="pun">:</span><span class="pln"><br><br>http</span><span class="pun">:</span><span class="com">//stackoverflow.com/questions/2358689/jquery-cookies-setting-select-drop-down-value-after-page-refresh</span><span class="pln"><br><br></span><span class="typ">Cheers</span><span class="pln"> anyway </span><span class="pun">:)</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/102437779498415032525/">ryan.p...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar  8 06:04:49 2010">Mar 8, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, </p><p>How do i delete all cookies with a specific value? </p><p>Also i would like to delete all cookies that have a prefix? </p><p>Cheers, </p><p>Ryan </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Mar 11 19:20:26 2010">Mar 11, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@ryan.pays </p><pre class="prettyprint"><span class="com">//How do i delete all cookies with a specific value?</span><span class="pln"><br></span><span class="kwd">var</span><span class="pln"> valueToDelete</span><span class="pun">,</span><span class="pln"> allCookies</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">;</span><span class="pln"><br><br>valueToDelete </span><span class="pun">=</span><span class="pln"> </span><span class="str">'the value'</span><span class="pun">;</span><span class="pln"><br>allCookies </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">();</span><span class="pln"><br><br></span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">typeof</span><span class="pln"> allCookies </span><span class="pun">===</span><span class="pln"> </span><span class="str">'object'</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> allCookies </span><span class="kwd">instanceof</span><span class="pln"> </span><span class="typ">Array</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">for</span><span class="pun">(</span><span class="pln"> name </span><span class="kwd">in</span><span class="pln"> allCookies </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> allCookies</span><span class="pun">[</span><span class="pln">name</span><span class="pun">]</span><span class="pln"> </span><span class="pun">===</span><span class="pln"> valueToDelete </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">del</span><span class="pun">(</span><span class="pln"> name </span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br><br></span><span class="com">//Also i would like to delete all cookies that have a prefix?</span><span class="pln"><br></span><span class="kwd">var</span><span class="pln"> filteredCookies</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">;</span><span class="pln"><br><br>filteredCookies </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="pln">filter</span><span class="pun">(</span><span class="pln"> </span><span class="str">/^site/</span><span class="pln"> </span><span class="pun">);</span><span class="pln"><br></span><span class="kwd">if</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">typeof</span><span class="pln"> filteredCookies </span><span class="pun">===</span><span class="pln"> </span><span class="str">'object'</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> filteredCookies </span><span class="kwd">instanceof</span><span class="pln"> </span><span class="typ">Array</span><span class="pln"> </span><span class="pun">)</span><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">for</span><span class="pun">(</span><span class="pln"> name </span><span class="kwd">in</span><span class="pln"> filteredCookies </span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">del</span><span class="pun">(</span><span class="pln"> name </span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">}</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/105841675421735303450/">vera.wa...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 29 16:00:43 2010">Mar 29, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Please show us some samples with both code and html </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 29 16:45:47 2010">Mar 29, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@vera.waage, I'm not sure what you want to see...cookie interaction doesn't involve a lot of HTML save for the form binding methods I added to jQuery.fn.  Is that what you're wanting to see? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/107161631632681708512/">suren1...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Apr  1 19:37:45 2010">Apr 1, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, </p><p>I'm writing a function to delete all the cookies I used and I reference your comment on Mar 11, 2010. It doesn't work. </p><p>I checked my function and your plugin and find that the "returnValue" in "filter" is not an "Array"! </p><p>I modify the declaration in filter() in jquery.cookies.2.2.0.js from "{}" to "\[\]". It's working now. </p><p>I think my solution may not be the best. Could you please give me some tips on the solution without modifying your plugin? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101914257897780804022/">mka...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Apr 15 19:10:21 2010">Apr 15, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Dear admin, </p><p>What codes can be written? </p><p>If any of all subdirectories from Directory Root are modified the cookies. All the cookies value of all directory are changed to that cookie. </p><p>I am using Joomla, rewrite, directory structure is various and dynamic. </p><p>Thank you. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/Kurtextrem/">Kurtextrem</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 20 11:11:34 2010">Apr 20, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Why does filter returns an object, and not an array? o.O </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 20 11:23:14 2010">Apr 20, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@Kurtextrem - it's returning a "hash" object...keys are the names of matched cookies, values are the value of the cookie </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/Kurtextrem/">Kurtextrem</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 20 11:28:17 2010">Apr 20, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>And the get() returns an object, too, not an array ... </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 20 11:33:34 2010">Apr 20, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@Kurtextrem - correct, get(), when called to retrieve all cookies, returns the same sort of "has" object.  Can you explain why this is a problem for you?  Is there something you'd prefer? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/Kurtextrem/">Kurtextrem</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 20 11:41:08 2010">Apr 20, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@auldridgej: For me it would be better, if it would return an Array..... it's easier to become the length. In the Object length doesnt work and i have no idea to become the length of the object :/  If you can show me an exmaple i maybe understand it </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103707436878887542578/">ivar.ka...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May 18 05:42:14 2010">May 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Thank you for this plugin! </p><p>However I got a problem when using Chrome and slashes. </p><p>When I first cookify "1/1/1980" and then do a cookieFill Chrome preforms some maths... I think the problem has to do with json in "parseCookies" Everything works fine in Firefox and IE. </p><p>Example at <a href="http://katmo.net/cookietest/test.html" rel="nofollow">http://katmo.net/cookietest/test.html</a> </p><p>Thank you </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May 18 05:47:47 2010">May 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@ivar.katmo - I have not worked much with Chrome yet so I have not seen this.  I will take a look as soon as I can.  Would you mind heading to <a href="http://code.google.com/p/cookies/issues/list" rel="nofollow">http://code.google.com/p/cookies/issues/list</a> and opening an issue to remind me to get to it? </p><p>Thanks, Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103707436878887542578/">ivar.ka...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue May 18 06:14:57 2010">May 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Thank you. Issue opened. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/104998751088545213863/">meri...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon May 31 03:49:16 2010">May 31, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>The example to set the domain option says: domain: "<tt>*</tt>.mydomain.com". This does not work (Firefox). If you want to set the cookie for all your subdomains, just ommit the "<tt>*</tt>". --&gt; domain: ".mydomain.com"  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/cinefilo/">cinefilo</a>,
+ 
+ </span>
+ <span class="date" title="Mon Jun 28 04:00:17 2010">Jun 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>$.cookies.del('my_cookie'); -&gt; Not function.  </p><p>I used $.cookies.test('my_cookie') after and it exists cookies. </p><p>Help me, please. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Jun 28 05:45:35 2010">Jun 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@cinefilo - .test() does not take any parameters and is not for testing if a particular cookie exists.  This method simply tests if the browser is accepting cookies.  Basically, your param is being ignored and the method is returning true letting you know the bowser is accepting cookies. </p><p>If you want to know if a cookie exists, run .get() and check if its return--null means a cookie is not set. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/104811370390025906156/">dum.step...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Sep  6 03:27:52 2010">Sep 6, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>When i do : $.cookie.get('mycookie'); if the cookie doesnt exist, javascript breaks and firebug displays "Break on error JSON.parse". </p><p>Anyone knows this issue? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/passcod3/">passcod3</a>,
+ 
+ </span>
+ <span class="date" title="Sun Sep 26 16:14:57 2010">Sep 26, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hey, when you do a <tt>$().cookieBind()</tt>, it sets the element to the cookie value, and monitors for change. That's expected behaviour, but it would be nice to have an option to do the inverse (kinda): e.g. <tt>$().cookieBind(true)</tt> would set a cookie from the element (i.e. <tt>$().cookify()</tt>), then monitor. Currently you can do that using code in the page, but it would be useful built-in. </p><p>Also, this may be just me, but <tt>$().cookify()</tt> seems not to set a cookie if it has not been created previously, so I have to do: </p><pre class="prettyprint"><span class="pln">$</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'my_value'</span><span class="pun">,</span><span class="pln"> </span><span class="str">''</span><span class="pun">);</span><span class="pln"><br>$</span><span class="pun">(</span><span class="str">'#my_value'</span><span class="pun">).</span><span class="pln">cookify</span><span class="pun">();</span></pre><p>Why's that? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/110585836756216212566/">jack.al...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Dec 24 15:56:47 2010">Dec 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I got "Break on error JSON.parse" too when the cookie didn't exist. I hadn't made changes to my code since it was last working. So I suspect the issue appeared as a result of an update to firebug or firefox. The issue is that firebug breaks after a 'try' clause throws an error. The 'try' clause in the cookies.get method calls (line 126) JSON.parse. If an error is thrown a value is set. So the code seems to work as intended. </p><p>I tried a few things that seemed to fix the issue but it happened again. The last thing I tried that seemed to work is reseting firebug options (Tools-&gt;Firebug-&gt;Options-&gt;Reset All Firebug Options). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112722706555317592631/">auldrid...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Dec 24 16:29:48 2010">Dec 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@jack.alves thanks a lot for the info. I have not seen such an issue with Firebug, but it doesn't surprise me. I appreciate you brining it to my attention as I'm sure it will be helpful to others. </p><p>Jim </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/114060396889248161794/">artug.a...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Feb 11 08:52:08 2011">Feb 11, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Can you give me a simple example how I can use it in Greasemonkey? </p><p>I use the following script to add checkbox to the current page: </p><p>do_modify_html_it( </p><blockquote>window.document, 
+document.evaluate( 
+<blockquote>'/HTML1<a href="https://code.google.com/p/cookies/w/edit/1">?</a>/BODY1<a href="https://code.google.com/p/cookies/w/edit/1">?</a>/TABLE1<a href="https://code.google.com/p/cookies/w/edit/1">?</a>',  
+document,  
+null,  
+XPathResult.FIRST_ORDERED_NODE_TYPE, 
+null).singleNodeValue,/&lt;TR&gt;&lt;TD/gi, 
+</blockquote>'&lt;TR&gt;&lt;TD style="padding-top:20px;"width: 0.1px; height: 0.1px"&gt;&lt;form name="myform"&gt;&lt;input type="checkbox" name="mybox"&gt;&lt;/form&gt;&lt;/TD&gt;&lt;TD', 
+null); 
+</blockquote><p></p><p>and I try to keep the state of all checkboxes on the page when the page is refreshed. </p><p>Thanks, </p><p>Artug </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/102444915606617578977/">fortarri...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jan 26 08:00:22 2012">Jan 26, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi. I'm not so expert in jQuery and I ask you for help. </p><p>I want to show an overlay advertising in homepage when the home is loaded but only once per session. </p><p>Now I have this code to display my overlay: </p><p>$(document).ready(function(loadPopup) { </p><blockquote>$('#overlay').delay(1000).fadeIn('fast'); 
+</blockquote><blockquote>$('#box').delay(1000).fadeIn('slow');  
+</blockquote><blockquote>$(".chiudi").click( function(unloadPopup){ $('#overlay').fadeOut('fast'); $('#box').hide(); });  
+</blockquote><blockquote>});  
+</blockquote><p>How can I use the cookies plugin to avoid displaying the overlay more than once per session? </p><p>Every help is welcome. </p><p>Thanks. </p><p>Fortarrigo </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/108494187229625469338/">deshraj....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Jan 30 07:02:16 2012">Jan 30, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Would the cookied named <strong>foo</strong> not be deleted if the <tt>jaaulde.utils.cookies.del("foo", {path: "/path", expiresAt: new Date(half_an_hour_from_current_time_in_milliseconds)});</tt>?. </p><p>Say the the above code in a javascript could not run because the user logged out of his account? Would the cookie not be deleted in that case from browser even after expiration time? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/108494187229625469338/">deshraj....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 31 07:47:10 2012">Jan 31, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>@my previous comment If the cookie doesn't get deleted from the browser even after its expiration, when tried to get it back with <tt>.get()</tt> it returns a <tt>null</tt>. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/108494187229625469338/">deshraj....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 31 08:04:31 2012">Jan 31, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I can't seem to be able to set the expiration for the cookie set using <tt>.cookieBind()</tt>. </p><p>The code I am using for it is <tt>$('input[id^="_val"]').cookieBind({path: '/path', expiresAt: new Date(new Date().getTime())});</tt>. </p><p>It sets only the path but not the expiration time for the bound cookie with the input field. </p><p>How do I set expiration time to the bound cookies? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/100779805734735111914/">smg...@gmx.net</a>,
+ 
+ </span>
+ <span class="date" title="Fri Feb  3 19:14:14 2012">Feb 3, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>this is one awesome script if one modifies it correctly. because it seems when using cookieBind(), all inputs are identified by their name, not id. which just doesn't work for checkboxes. </p><p>i've adjusted it to save the cookies for each id and now i can even use $('input').cookieBind(); for my form with fields and checkboxes. which is ridiculously elegant and i'm enormously happy that it works. </p><p>you can get my modified version here (don't know much about this whole google system, so i don't know where i could upload the file. so i went with mediafire...): <a href="http://www.mediafire.com/?944c09jotuzcuyf" rel="nofollow">http://www.mediafire.com/?944c09jotuzcuyf</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106701748051130958868/">shariq.i...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 23 08:54:00 2012">Feb 23, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I am working on Cookies can any one send me the code plz </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116425902722106948965/">cairn...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Mar  3 16:24:53 2012">Mar 3, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi OP, love your work, i was sick and tired of dealing with setting up cookies. </p><p>What I am trying to do: use your code with my greasemonkey script What is happening: i can use the jaaulde.utils.cookies namespace but not the $.cookies namespace Where I am trying it: in my 'jquery' section of my greasemonkey script ($ namespace is active and gets used alot) </p><pre class="prettyprint"><span class="kwd">var</span><span class="pln"> cscript </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">'script'</span><span class="pun">);</span><span class="pln"><br>cscript</span><span class="pun">.</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> </span><span class="str">'jquery.cookies.2.2.0.js'</span><span class="pun">;</span><span class="pln"><br>document</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">'head'</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">cscript</span><span class="pun">);</span><span class="pln"><br><br></span><span class="com">// create script and preload jQ 1.7.1</span><span class="pln"><br></span><span class="kwd">var</span><span class="pln"> script </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">'script'</span><span class="pun">);</span><span class="pln"><br>script</span><span class="pun">.</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> </span><span class="str">'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'</span><span class="pun">;</span><span class="pln"><br>document</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">'head'</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">script</span><span class="pun">);</span><span class="pln"><br></span><span class="com">// When jQuery is loaded, we can use it!</span><span class="pln"><br>script</span><span class="pun">.</span><span class="pln">addEventListener</span><span class="pun">(</span><span class="str">'load'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln"> <br>&nbsp; &nbsp; &nbsp; &nbsp; $ </span><span class="pun">=</span><span class="pln"> unsafeWindow</span><span class="pun">[</span><span class="str">'jQuery'</span><span class="pun">];</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">noConflict</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// all jQ code goes below here</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// ---------------------------</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; alert</span><span class="pun">(</span><span class="pln">jaaulde</span><span class="pun">.</span><span class="pln">utils</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="pln">test</span><span class="pun">());</span><span class="com">//returns true</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; alert</span><span class="pun">(</span><span class="pln">$</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="pln">test</span><span class="pun">());</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">//breaks everything</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//more jquery code exist below here that works fine</span><span class="pln"><br></span><span class="pun">}</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116425902722106948965/">cairn...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Mar  3 16:56:52 2012">Mar 3, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>ok, i got it sorted out (well, may not be best but it works) </p><pre class="prettyprint"><span class="com">// create script and preload jQ 1.7.1</span><span class="pln"><br></span><span class="kwd">var</span><span class="pln"> script </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">'script'</span><span class="pun">);</span><span class="pln"><br>script</span><span class="pun">.</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> </span><span class="str">'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'</span><span class="pun">;</span><span class="pln"><br>document</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">'head'</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">appendChild</span><span class="pun">(</span><span class="pln">script</span><span class="pun">);</span><span class="pln"><br></span><span class="com">// When jQuery is loaded, we can use it!</span><span class="pln"><br>script</span><span class="pun">.</span><span class="pln">addEventListener</span><span class="pun">(</span><span class="str">'load'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln"> <br>&nbsp; &nbsp; &nbsp; &nbsp; $ </span><span class="pun">=</span><span class="pln"> unsafeWindow</span><span class="pun">[</span><span class="str">'jQuery'</span><span class="pun">];</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">noConflict</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// all jQ code goes below here</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// ---------------------------</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; $</span><span class="pun">.</span><span class="pln">getScript</span><span class="pun">(</span><span class="str">"jquery.cookies.2.2.0.js"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert</span><span class="pun">(</span><span class="pln">$</span><span class="pun">.</span><span class="pln">cookies</span><span class="pun">.</span><span class="pln">test</span><span class="pun">());</span><span class="pln"> </span><span class="com">// works fine, returns TRUE</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">});</span><span class="pln"><br></span><span class="com">// rest of my jQ stuff</span><span class="pln"><br></span><span class="pun">}</span></pre><p>i removed all the other loading stuff and just used $.getScript() </p><p>turns out the cookie script &amp; jquery weren't loading fast enough to mesh together (or something, a 1sec delay before using $.cookie made it work...) so now i load jQ first then the cookie code dynamically. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/114828542962841601876/">jiazhoul...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon May 28 02:32:45 2012">May 28, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I love this plugin,thx! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">jammy.t...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 25 08:52:37 2013">Jan 25, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>I cannot get the a radio to save in the cookie, any ideas? </p><p>Code: </p><p>&lt;label for="AP-regional" title="Asia Pacific"&gt;AP &lt;/label&gt; &lt;input id="AP-regional store" type="radio" value="AP" class="region" name="region" /&gt; </p><p>&lt;script&gt; $('.store').cookify(); &lt;/script&gt; </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/108462025685071532919/">carlosco...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Feb  2 09:51:57 2013">Feb 2, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>I have wanted this cookies and session cookies were a but not how. </p><blockquote>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"&gt;&lt;/script&gt; 
+<blockquote>&lt;script src="jquery.cookie.js"&gt;&lt;/script&gt; 
+&lt;script&gt; 
+<blockquote>$(function(){ 
+<blockquote>if(typeof $.cookie('modalcookie') === 'undefined'){ 
+<blockquote>$.cookie('modalcookie','true');  
+</blockquote>} 
+// abre modal si no tiene cookie 
+console.log($.cookie('modalcookie')); 
+if($.cookie('modalcookie')=='true'){ 
+<blockquote>$('#light, #fade').show(); 
+$.cookie('modalcookie','false'); 
+</blockquote>}		     
+// abre y cierra modal 
+$('#fade').click(function(e){ 
+<blockquote>e.preventDefault(); 
+$('#light, #fade').hide(); 
+</blockquote>}); 
+$('#abremodal').click(function(e){ 
+<blockquote>e.preventDefault(); 
+$('#light, #fade').show(); 
+</blockquote>}); 
+</blockquote>}); 
+</blockquote>&lt;/script&gt; 
+</blockquote></blockquote><p>this throws cookies modal window on page load, and when users go to the home page to other sections of the site and then return to the home page is not re-trigger the modal window which is well up there. </p><p>Now the problem is that when you close the browser window I enter the product back to the modal window does not fire again. </p><p>Yuda greatly appreciate that they can give me. </p><p>Greetings from Venezuela. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">►</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcookies%2Fwiki%2FDocumentation&followup=https%3A%2F%2Fcode.google.com%2Fp%2Fcookies%2Fwiki%2FDocumentation">Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/cookies/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" x-webkit-speech="">
+ <input type="hidden" name="create_time" value="" x-webkit-speech="">
+ <input type="hidden" name="mode" value="" x-webkit-speech="">
+ <input type="hidden" name="pagename" value="Documentation" x-webkit-speech="">
+ <input type="hidden" name="token" value="" x-webkit-speech="">
+ </form>
+
+
+ <script src="./cookies_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./cookies_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./cookies_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./cookies_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><div class="menuCategory controls"><a class="menuItem" style="display: block;" href="http://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcookies%2Fwiki%2FDocumentation&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fcookies%2Fwiki%2FDocumentation">Sign in to see your favorites</a><hr class="menuSeparator"><a class="menuItem" style="display: block;" href="https://code.google.com/hosting/">Find open source projects...</a><a class="menuItem" style="display: block;" href="https://code.google.com/hosting/createProject">Create a project...</a></div></div></body><style></style></html>

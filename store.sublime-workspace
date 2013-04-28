@@ -1,0 +1,1516 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"fetc",
+				"fetchAllByDate  (function)"
+			],
+			[
+				"sub",
+				"submitButton"
+			],
+			[
+				"up",
+				"updateUrl"
+			],
+			[
+				"cre",
+				"createUrl"
+			],
+			[
+				"ac",
+				"actionField"
+			],
+			[
+				"res",
+				"responseHandler"
+			],
+			[
+				"delete",
+				"deleteUrl"
+			],
+			[
+				"create",
+				"createButton"
+			],
+			[
+				"UP",
+				"updateText"
+			],
+			[
+				"acti",
+				"actionLabel"
+			],
+			[
+				"delet",
+				"deleteButton"
+			],
+			[
+				"prod",
+				"product_data"
+			],
+			[
+				"servi",
+				"service_data"
+			],
+			[
+				"sell",
+				"sell_productmanager"
+			],
+			[
+				"sell_ro",
+				"sell_products"
+			],
+			[
+				"dat",
+				"datetime"
+			],
+			[
+				"id",
+				"idproduct"
+			],
+			[
+				"sele",
+				"selectedClassName"
+			],
+			[
+				"data",
+				"database_name"
+			],
+			[
+				"mysql_",
+				"mysql_connect"
+			],
+			[
+				"cal",
+				"callBack"
+			],
+			[
+				"mate",
+				"materialList"
+			],
+			[
+				"pub",
+				"publUrlPattern"
+			],
+			[
+				"wa",
+				"waitAjax"
+			],
+			[
+				"me",
+				"messageList"
+			],
+			[
+				"max",
+				"maxTextLength"
+			],
+			[
+				"change",
+				"changeTime"
+			],
+			[
+				"an",
+				"animate"
+			],
+			[
+				"message",
+				"messageList"
+			],
+			[
+				"messa",
+				"messageList"
+			],
+			[
+				"Up",
+				"uploadUrl"
+			],
+			[
+				"flag",
+				"flagClass"
+			],
+			[
+				"int",
+				"initializeCanvas"
+			],
+			[
+				"can",
+				"canvas2dContext"
+			],
+			[
+				"coll",
+				"collections"
+			],
+			[
+				"pattern",
+				"patternFormat"
+			],
+			[
+				"url",
+				"urlParamNames"
+			],
+			[
+				"attr",
+				"attributes"
+			],
+			[
+				"root",
+				"rootNodeId"
+			],
+			[
+				"clost",
+				"closestNotStairs"
+			],
+			[
+				"path",
+				"pathAssosiated"
+			],
+			[
+				"get",
+				"getNodes"
+			],
+			[
+				"bui",
+				"build-path"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"getM",
+				"getMapsByName"
+			],
+			[
+				"pathA",
+				"pathAssosiatedFrom"
+			],
+			[
+				"closes",
+				"closestAbs"
+			],
+			[
+				"asso",
+				"assosiationArray"
+			],
+			[
+				"from",
+				"fromNode"
+			],
+			[
+				"wri",
+				"writeDocs"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"empt",
+				"emptyRowClassName"
+			],
+			[
+				"las",
+				"lastIndexOf"
+			],
+			[
+				"fun",
+				"function	function"
+			],
+			[
+				"pos",
+				"positions"
+			],
+			[
+				"ModalA",
+				"ModalAlertTemplate"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"vali",
+				"validateCoordinate"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"ur",
+				"urls"
+			],
+			[
+				"ass",
+				"assosiation"
+			],
+			[
+				"ca",
+				"calculatedData"
+			],
+			[
+				"as",
+				"assosiationArray"
+			],
+			[
+				"pre",
+				"predecessors"
+			],
+			[
+				"us",
+				"usedNumber"
+			],
+			[
+				"sta",
+				"startId"
+			],
+			[
+				"conn",
+				"connected"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"eq",
+				"require"
+			],
+			[
+				"ta",
+				"targetNodeStage"
+			],
+			[
+				"onUn",
+				"onUnfixModify"
+			],
+			[
+				"onFix",
+				"onFixModify"
+			],
+			[
+				"pane",
+				"panelAuthed"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"selec",
+				"selectedId"
+			],
+			[
+				"bu",
+				"buzzyClassName"
+			],
+			[
+				"hight",
+				"highlighted"
+			],
+			[
+				"buz",
+				"buzzzyMapObjects"
+			],
+			[
+				"cu",
+				"currentFunction"
+			],
+			[
+				"MAP",
+				"mapObjects"
+			],
+			[
+				"tar",
+				"targetNode"
+			],
+			[
+				"map",
+				"mapObjects"
+			],
+			[
+				"link",
+				"linkDblClick"
+			],
+			[
+				"ima",
+				"imageHeight"
+			],
+			[
+				"im",
+				"imageHeight"
+			],
+			[
+				"imag",
+				"imageWidth"
+			],
+			[
+				"super",
+				"superLayerClass"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"Mo",
+				"ModalAlert"
+			],
+			[
+				"node",
+				"nodeElement"
+			],
+			[
+				"sin",
+				"singleNode"
+			],
+			[
+				"curr",
+				"currentFunction"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"too",
+				"toggleActiveButton"
+			],
+			[
+				"showM",
+				"ShowMapView"
+			],
+			[
+				"ite",
+				"iterName"
+			],
+			[
+				"at",
+				"attribute"
+			],
+			[
+				"ModalE",
+				"ModalAlertTemplate"
+			],
+			[
+				"FIND",
+				"findOne"
+			],
+			[
+				"event",
+				"eventObject"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"Map",
+				"MapObjectSchema"
+			],
+			[
+				"is",
+				"isSave"
+			],
+			[
+				"con",
+				"controll"
+			],
+			[
+				"ModalEdit",
+				"ModalEditLineModel"
+			],
+			[
+				"ok",
+				"okClick"
+			],
+			[
+				"red",
+				"redetermination"
+			],
+			[
+				"del",
+				"delClick"
+			],
+			[
+				"crea",
+				"createInfo"
+			],
+			[
+				"pop",
+				"popovered"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"para",
+				"parameter"
+			],
+			[
+				"addClass",
+				"addClassName  (function)"
+			],
+			[
+				"dom",
+				"domManipulator"
+			],
+			[
+				"add",
+				"addClass  (function)"
+			],
+			[
+				"ope",
+				"opened"
+			],
+			[
+				"no",
+				"notify"
+			],
+			[
+				"ho",
+				"holdTime"
+			],
+			[
+				"fu",
+				"fullScreenSize"
+			],
+			[
+				"img",
+				"mapImages"
+			],
+			[
+				"render",
+				"renderMap"
+			],
+			[
+				"cons",
+				"cons	console.log"
+			],
+			[
+				"com",
+				"composer"
+			],
+			[
+				"pu",
+				"publicRoot"
+			],
+			[
+				"typeo",
+				"typeof-undefined	typeof-undefined"
+			],
+			[
+				"op",
+				"options  (argument)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config.php",
+			"settings":
+			{
+				"buffer_size": 153,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"fo",
+				"Format: Php"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"SE JS",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"SE HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"s js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"s html",
+				"Set Syntax: HTML"
+			],
+			[
+				"FO",
+				"Format: Javascript"
+			],
+			[
+				"of",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"ja",
+				"Format: Javascript"
+			],
+			[
+				"f",
+				"Format: Javascript"
+			],
+			[
+				"o",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"ST HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"SET JS",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Snippet: typeof",
+				"Snippet: typeof-undefined"
+			],
+			[
+				"set syn htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"gist open",
+				"Gist: Open Gist"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"gist ",
+				"Gist: Create Private Gist"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"GIST DE",
+				"Gist: Delete Gist"
+			],
+			[
+				"GIST CREA",
+				"Gist: Create Private Gist"
+			],
+			[
+				"GIST ",
+				"Gist: Open Gist"
+			],
+			[
+				"GIST OPEN",
+				"Gist: Open Gist"
+			],
+			[
+				"GIST RE",
+				"Gist: Rename File"
+			],
+			[
+				"GITS",
+				"Gist: Open Gist"
+			],
+			[
+				"create pu",
+				"Gist: Create Public Gist"
+			],
+			[
+				"open",
+				"Gist: Open Gist"
+			],
+			[
+				"Snippet: console",
+				"Snippet: console.log"
+			],
+			[
+				"stx jas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss  htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"git r",
+				"Git: Graph All"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Github: Open File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"Set Syntax: EJS"
+			],
+			[
+				"s javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"s java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"backbone",
+				"Snippet: Backbone Baguette ModelView"
+			],
+			[
+				"snippet ba",
+				"Snippet: Backbone Baguette CollectionView"
+			],
+			[
+				"fet",
+				"Fetch: Manage"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"SNIPPET DI",
+				"Snippet: <div>"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"set synta",
+				"Set Syntax: HTML5"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"SET SY HT",
+				"Set Syntax: HTML"
+			],
+			[
+				"INSTALL ",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set synta ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"snippet",
+				"Snippet: Wrap Selection in Open/Close Tag"
+			],
+			[
+				"snippet: ",
+				"Snippet: DOCTYPE HTML"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle",
+				"Toggle Block Comment"
+			],
+			[
+				"togle",
+				"Toggle Comment"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"java s",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"set javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"SET HT",
+				"Set Syntax: HTML"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/wowjp_get.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/js/jQuery Validate 1.1.2/jQuery Validate 1.1.2/demo/basic.html",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/css/main.css",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/js/main.js",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/main/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products/add.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products/delete.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products/edit.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-revenue/form.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_products/report.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/blocks/head.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/main/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-revenue/form_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-revenue/report_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_products/form_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_products/report_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_services/form_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_services/report_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_services/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/services/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/database.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/usermanager.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/revenue-report/report.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_products/form.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/sell_productmanager.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/sell_servicemanager.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_services/form.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-sell_services/report.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/report-revenue/report.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/css/report.css",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/Validate-master/Validate-master/demo/basic.html",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/js/jquery.field-validate.js",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products-report/report.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/global.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/do.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/login.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/logout.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/services/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/services/edit.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/services/delete.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/services/add.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_services/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_services/edit.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_services/delete.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_services/add.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products/edit.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products/delete.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products/add.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/revenue-report/form.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products-report/form.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/sell_products-report/form_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/servicemanager.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/js/jquery-crud.js",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/revenue-report/form_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/revenue-report/report_view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/index.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/.htaccess",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/revenue-report/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/logout/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/login/do.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/login/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/productmanager.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/revenue-report/view.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/login/index.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controlles/cookie.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/user/login/model.php",
+		"/N/Железный гном/сайт/fegnome.ru/lib/DBWorker.php",
+		"/N/Железный гном/сайт/fegnome.ru/lib/DBConnector.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/products/change.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/modules/model.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/product.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/user.php",
+		"/N/Железный гном/сайт/fegnome.ru/lib/Basic.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/conf.php",
+		"/N/HELLRATE/готовый проект/13022013/classes/db.php",
+		"/N/HELLRATE/готовый проект/13022013/config.inc.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controllers/db.php",
+		"/N/HELLRATE/готовый проект/13022013/index.php",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/php/Portable_WebServers_Denwer3/WebServers/home/localhost/www/controlles/user.php",
+		"/C/Documents and Settings/Administrator/Desktop/На wowjp.net было добавлено несколько фишек.",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/cse.js",
+		"/C/Documents and Settings/Administrator/Desktop/1.js",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/main.css",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/main.js",
+		"/C/Documents and Settings/Administrator/Desktop/main.css",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/txt-rotator.jquery.js",
+		"/C/Documents and Settings/Administrator/Desktop/main.js",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/txtAdsSetter.js",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/data.php",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/json_decode.php",
+		"/C/Documents and Settings/Administrator/Desktop/0_txt-rotator.jquery.js",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/list.php",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/data.data",
+		"/C/Documents and Settings/Administrator/Desktop/txt-rotator.jquery.js",
+		"/C/Documents and Settings/Administrator/Desktop/main.min.js",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/7zO696.tmp/user.xml",
+		"/C/Documents and Settings/Administrator/Desktop/txt-rotator.js",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/j3.txt",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/wowlol_news_parser.php",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/wowlol_news.php",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/wowlol_get.php",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/error_log",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/vk.wallpost.php",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/wowlol_forbidden_urls.txt",
+		"/C/Documents and Settings/Administrator/Local Settings/Temp/fz3temp-1/07fd3baf035f1fb6b2bcc5de639227e2.jpg",
+		"/V/Solution/server/public/js/views/map/showOnMap.js",
+		"/V/Solution/server/public/js/views/map/pathBuilder.js",
+		"/C/Documents and Settings/Administrator/YandexDisk/ХНЕУ/КПП/kpplab2/src/Mutex.java",
+		"/C/Documents and Settings/Administrator/YandexDisk/ХНЕУ/КПП/kpplab2/src/TaskEFunction.java",
+		"/C/Documents and Settings/Administrator/YandexDisk/ХНЕУ/КПП/kpplab2/src/Program.java",
+		"/C/Documents and Settings/Administrator/YandexDisk/ХНЕУ/КПП/kpplab2/src/Runnabler.java",
+		"/C/Documents and Settings/Administrator/YandexDisk/ХНЕУ/КПП/kpplab2/src/Vocabulary.java",
+		"/V/Solution/server/public/js/templates/map/flag.ejs",
+		"/V/Solution/server/public/apple/style/apple.css",
+		"/V/Solution/server/public/js/views/map/mapBuilder.js",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/Canvas_SmoothCurve_1.1 (1)/canvas_curves_demo.html",
+		"/C/Documents and Settings/Administrator/My Documents/Downloads/Canvas_SmoothCurve_1.1 (1)/canvas.curve.js",
+		"/V/Solution/server/public/js/libs/curve/canvas.curve.js",
+		"/V/Solution/server/public/js/panel-apps/views/nodesConstructor.js",
+		"/V/Solution/server/public/js/panel-apps/views/map/node.js",
+		"/V/Solution/server/schemas/node.js",
+		"/V/Solution/server/api/modules/node.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Documents and Settings\\Administrator\\My Documents\\Downloads\\php\\Portable_WebServers_Denwer3\\WebServers\\home\\localhost\\www",
+			"V:\\Solution\\server\\public",
+			"V:\\navigation\\server,-V:\\navigation\\server\\public\\js\\libs",
+			"V:\\navigation\\server,-libs",
+			"V:\\navigation\\server",
+			"N:\\HELLRATE\\git,*.js",
+			"N:\\HELLRATE\\git",
+			"",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"center",
+			"Очистить",
+			"product",
+			"продукции",
+			"user",
+			"day",
+			"Клиент",
+			"Продавец",
+			"р",
+			"Прибыль",
+			"Продукция",
+			"Дата",
+			"Продукция",
+			"прибыли",
+			"include_once(\"",
+			"../../",
+			"datetime",
+			"Управление продажей продукции",
+			"product",
+			"Product",
+			"product",
+			"Продукция",
+			"name",
+			"product",
+			"продуктами",
+			"$product",
+			"name",
+			"price",
+			"product",
+			"name",
+			"product",
+			"^	",
+			"POST",
+			"$_POST",
+			"name",
+			"idproduct",
+			"'add'",
+			"'edit'",
+			"settings.idField",
+			"Редактирование",
+			"skipClassName",
+			"selectedClassName",
+			"./",
+			"service_data",
+			"i",
+			"product",
+			"from",
+			"from_time",
+			"from",
+			"fro",
+			"from",
+			"POST",
+			"REQUEST",
+			"_REQUEST",
+			"REQUEST",
+			"idproduct",
+			"idsell_product",
+			"price",
+			"idproduct",
+			"idclient",
+			"idproduct",
+			"client",
+			"product",
+			"idproduct",
+			"client",
+			"idproduct",
+			"product",
+			"client",
+			"Управление продуктами",
+			"user",
+			"products",
+			"product",
+			"Продукт",
+			"price",
+			"idclient",
+			"price",
+			"idproduct",
+			"price",
+			"iduser",
+			"price",
+			"add",
+			"name",
+			"data",
+			"is_float",
+			"add",
+			"delete",
+			"edit",
+			"idproduct",
+			"view",
+			"$user",
+			"UserManager",
+			"user",
+			"s",
+			"#(",
+			"delete",
+			"Редактирование",
+			"price",
+			"val",
+			"id",
+			"Название",
+			"Title",
+			"Идентификатор",
+			"Цена",
+			"Название",
+			"Идентификатор",
+			"name",
+			"main",
+			"login",
+			"password",
+			"login",
+			"form",
+			"username",
+			"$this->db",
+			"password",
+			"username",
+			"login",
+			"sell_service_access",
+			"clients_access",
+			"$this->$id_name",
+			"\"iduser\"",
+			"\"iduser\"]",
+			"knyga",
+			"alex",
+			"true",
+			"connection_id",
+			"require_path",
+			"t",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"include_once(\"../../global.php\");",
+			"",
+			"$usermanager",
+			"",
+			"\\n",
+			"",
+			"writeCookieFromObject",
+			"<?if(0)?>$1<?endif?>",
+			"showOnMap",
+			"config.map",
+			"config",
+			"\\s*",
+			"\"",
+			"*?",
+			"div",
+			"cancelButton",
+			"predecessor",
+			"nodeConfiguration",
+			"nodesConfiguration",
+			"nodesConstructor",
+			"addLinkModel",
+			"addNodeView",
+			"this.options.mapOptions.currentFunction",
+			"this.options.currentFunction",
+			"this.currentFunction",
+			"",
+			"href=\"/publ/163\">Temple of the Jade Serpent",
+			"href=\"/publ/162\">Stormstout Brewery",
+			"href=\"/publ/161\">Siege of Niuzao Temple</a>",
+			"href=\"/publ/160\">Shado-Pan Monastery</a>",
+			"",
+			"http://",
+			"esponse",
+			"body",
+			"",
+			"config.pages.home",
+			"get",
+			"add",
+			"//that.close();",
+			"this.options.mapData",
+			"this.mapData",
+			"AVERAGE",
+			"",
+			"$",
+			"\\t",
+			"",
+			"\"$1\",",
+			"<li>$1</li>",
+			"",
+			"<a",
+			"</a>\\n",
+			"",
+			"imagePath",
+			"\"$1\":",
+			"/",
+			"\"libs/jquery/noty/layouts/$1\", ",
+			"$1",
+			"\"libs/jquery/noty/layouts/$1\", ",
+			"\\n",
+			"else\\n\\t\\tif",
+			"else\\nif",
+			"",
+			"../img/bootstrap/",
+			"abstractAnimation",
+			"Identifier = $1",
+			"$1",
+			"\"$1\"",
+			"\"",
+			"string.Empty",
+			"\"",
+			"{\"$2\", new BOMIndentifer(){Identifier = \"$1\", DotNETName = \"$2\", AddInfo = \"$3\"}},",
+			"new BOMIndentifer(){Identifier = \"$1\", DotNETName = \"$2\", AddInfo = \"$3\"},",
+			"string.Empty",
+			"new BOMIndentifer(){Identifier = \"$1\", DotNETName = \"$2\", AddInfo = \"$3\"},",
+			"{Identifier = \"$1\", DotNETName = \"$2\", AddInfo = \"$3\"},",
+			"{Identifier = $1, DotNETName = $2, AddInfo = $3},",
+			"Encoding",
+			"",
+			"DBNull.Value == $2 ? string.Empty:($1) $2;",
+			"DBNull.Value == $2 ? string.Empty:($1)$2;",
+			"<a href=\"$2\">$1</a>",
+			"finished",
+			":",
+			"$1. ",
+			"$1.",
+			"<a href=\"$3\">$1</a>",
+			"",
+			"\\n",
+			"<a href=\"$6\">$1</a><a href=\"$6\">$2</a><a href=\"$6\">$3</a><a href=\"$6\">$4</a>",
+			"236",
+			"<a href=\"$3\">$1</a>",
+			"<a href=\"$2\">$1</a>",
+			"<a href=\"$1\">$2</a>",
+			".\\n",
+			".",
+			"\\n",
+			"",
+			"[\"$1\",\"$2\"],",
+			"n.",
+			"o.",
+			"forward",
+			"data/mainMenu",
+			"',",
+			"Diablo",
+			"Lineage",
+			".$1/\\t",
+			".$1/",
+			"$1/",
+			": ",
+			"$1. ",
+			"http://wowjp.net/forum/105-$1-1",
+			"$1\nhttp://wowjp.net/forum/105-$1-1",
+			"$1\n",
+			"$1\n\\n",
+			"$1\n",
+			"$1\n$1",
+			"\\t",
+			"| }",
+			"wowlol",
+			"\\>",
+			"\\<",
+			"(.+?)",
+			"()",
+			"",
+			"/",
+			"&",
+			"="
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config.php",
+					"settings":
+					{
+						"buffer_size": 153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 67.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pathbu",
+				"public/js/views/pathBuilder.js"
+			],
+			[
+				"smooth",
+				"public/js/libs/smoothjs/Smooth-0.1.7.js"
+			],
+			[
+				"ani",
+				"server/public/js/views/abstractAnimation.js"
+			],
+			[
+				"butto",
+				"server/public/js/views/buttonsPanel.js"
+			],
+			[
+				"time",
+				"server/public/js/views/timeRotator.js"
+			],
+			[
+				"snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap"
+			],
+			[
+				"",
+				"/C/Documents and Settings/Administrator/test.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1031.0,
+		"selected_items":
+		[
+		],
+		"width": 1680.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true
+}
