@@ -1,0 +1,64 @@
+CREATE TABLE `components` (
+    `id` int(10) unsigned NOT NULL auto_increment,
+    `typeId` int(10) unsigned NOT NULL,
+    `moreInfo` VARCHAR(32), 
+    -- etc
+    PRIMARY KEY (`id`),
+    KEY `type` (`typeId`)
+    CONSTRAINT `myForeignKey` FOREIGN KEY (`typeId`)
+      REFERENCES `types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+)
+-----------
+CREATE TRIGGER `TestTable_SomeTrigger`
+BEFORE UPDATE ON `test_table`
+FOR EACH ROW
+BEGIN
+    DECLARE msg VARCHAR(255);
+    IF (SomeTestToFail = "FAIL!") THEN
+        set msg = "DIE: You broke the rules... I will now Smite you, hold still...";
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg;
+    END IF;
+
+    -- Do any other code here you may want to occur if it's all OK or leave blank it will be
+    --  skipped if the above if is true
+END$$
+-----------
+CREATE TRIGGER staffOfficeNullReplacerTrigger 
+BEFORE INSERT 
+ON Staff
+  FOR EACH ROW BEGIN
+    IF (NEW.office IS NULL) THEN
+      SET NEW.office = "N/A";
+    END IF
+-----------
+CREATE TRIGGER cardPersentTrigger
+BEFORE INSERT, UPDATE 
+ON card
+FOR EACH ROW
+BEGIN
+	DECLARE msg VARCHAR(255);
+    IF (NEW.persent < 0 or NEW.persent>100) THEN
+        set msg = "Persent out of range. Should be between 0 and 100";
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg;
+    END IF;
+END
+-----------
+CREATE TRIGGER serviceHourPriceTrigger
+BEFORE INSERT, UPDATE 
+ON service
+FOR EACH ROW
+BEGIN
+	DECLARE msg VARCHAR(255);
+    IF (NEW.hourprice < 0) THEN
+        set msg = "Price can not be negative";
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg;
+    END IF;
+END
+-----------
+DELIMITER //
+CREATE TRIGGER deleteCascadeUserType AFTER DELETE ON user_type
+FOR EACH ROW
+BEGIN
+DELETE FROM user WHERE iduser_type = OLD.iduser_type;
+END; //
+DELIMITER ;
